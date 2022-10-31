@@ -1,0 +1,10 @@
+<p>books</p>
+<a href="/books/new">Add book</a>
+<% books.forEach(book => { %>
+<div style="border: 1px solid black; margin-bottom: 1rem; padding: 0 20px 20px">
+  <h4><%= book.title %> By <%= book.author %></h4>
+  <a href="/books/<%- book._id %>">Details</a>
+  <a href="/books/update/<%- book._id %>">Update</a>
+  <a href="/books/delete/<%- book._id %>">Delete</a>
+</div>
+<% }) // The lord of The Rings By T %>

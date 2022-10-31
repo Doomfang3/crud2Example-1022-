@@ -1,0 +1,9 @@
+<form method="POST" action="<%- book.id ? `/books/update/${book.id}` : '/books' %>">
+  <input type="text" placeholder="Book title" name="title" value="<%- book.title %>" />
+  <input type="text" placeholder="author" name="author" value="<%- book.author %>" />
+  <input type="text" placeholder="genre" name="genre" value="<%- book.genre.join(' ') %>" />
+  <button type="submit">Send</button>
+</form>
+
+<% // if (book.id) { // `/books/update/${book.id}` //} else { // '/books' //} //book.id ?
+`/books/update/${book.id}` : '/books' %>

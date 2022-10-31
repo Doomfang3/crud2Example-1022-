@@ -1,0 +1,8 @@
+<p>book</p>
+<h4><%= book.title %></h4>
+<h4><%= book.author %></h4>
+<ul>
+  <% book.genre.forEach(currentGenre => { %>
+  <li><%= currentGenre%></li>
+  <% }) %>
+</ul>
